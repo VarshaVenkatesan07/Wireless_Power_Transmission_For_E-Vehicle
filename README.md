@@ -1,18 +1,18 @@
-# Wireless Power Transmission for Electric Vehicle (EV)
+# ⚡ IoT-Based Wireless Power Transmission for Electric Vehicle (EV)
 
 ## Overview
 
-The Wireless Power Transmission for Electric Vehicle (EV) system is a contactless charging solution that uses **Resonant Inductive Coupling** to transfer electrical power efficiently across an air gap. The prototype enables wireless energy transfer while continuously monitoring voltage and current in real time using an ESP8266 microcontroller.
+The IoT-Based Wireless Power Transmission for Electric Vehicle (EV) system is a smart contactless charging solution that uses **Resonant Inductive Coupling** to transfer electrical power wirelessly. The system integrates an **ESP8266** microcontroller for real-time voltage and current monitoring, enabling remote monitoring through IoT for improved efficiency and user convenience.
 
 ---
 
 ## Features
 
-- Contactless wireless power transmission
-- Resonant inductive coupling technology
+- Contactless wireless EV charging
+- Resonant inductive power transmission
+- Real-time voltage and current monitoring
+- IoT-based remote monitoring using ESP8266
 - Power transfer across a 5 cm air gap
-- Real-time voltage monitoring
-- Real-time current monitoring
 - Low-cost embedded prototype
 
 ---
@@ -32,6 +32,7 @@ The Wireless Power Transmission for Electric Vehicle (EV) system is a contactles
 - Arduino IDE
 - Embedded C
 - Proteus
+- IoT Platform (Blynk / ThingSpeak)
 
 ---
 
@@ -39,31 +40,41 @@ The Wireless Power Transmission for Electric Vehicle (EV) system is a contactles
 
 | Component | Purpose |
 |----------|---------|
-| ESP8266 NodeMCU | Controls the system and monitors electrical parameters |
+| ESP8266 NodeMCU | Controls the system and enables IoT connectivity |
 | Transmitter Coil | Generates the magnetic field for wireless power transfer |
-| Receiver Coil | Receives power from the transmitter coil |
-| MOSFET Driver Circuit | Produces high-frequency switching signals |
+| Receiver Coil | Receives wireless power from the transmitter |
+| MOSFET Driver Circuit | Generates high-frequency switching signals |
 | Voltage Sensor | Measures output voltage |
 | Current Sensor | Measures output current |
 | Capacitors | Maintain resonance for efficient power transfer |
 | DC Power Supply | Supplies power to the transmitter circuit |
 | Breadboard/PCB | Circuit assembly and prototyping |
-| Connecting Wires | Electrical connections between components |
+| Connecting Wires | Electrical connections |
 
 ---
 
 ## Working Principle
 
-The transmitter circuit generates a high-frequency alternating magnetic field using resonant inductive coupling. The receiver coil captures this magnetic field and converts it into electrical energy to power the load. The ESP8266 continuously monitors the output voltage and current, enabling real-time performance analysis of the wireless charging system.
+The transmitter coil generates a high-frequency magnetic field using resonant inductive coupling. The receiver coil captures this magnetic field and converts it into electrical energy to power the load. The ESP8266 continuously measures voltage and current, uploads the data to an IoT platform, and enables users to monitor the charging process remotely in real time.
 
 ---
 
 ## Results
 
-- Successfully achieved wireless power transfer across a 5 cm air gap.
-- Monitored voltage and current in real time using ESP8266.
-- Demonstrated stable and efficient contactless power transmission.
-- Developed a reliable prototype for EV wireless charging applications.
+- Successfully achieved wireless power transmission across a 5 cm air gap.
+- Monitored voltage and current in real time.
+- Uploaded charging data to an IoT platform using ESP8266.
+- Demonstrated an efficient and reliable contactless EV charging prototype.
+
+---
+
+## Applications
+
+- Electric Vehicle Wireless Charging
+- Smart Charging Stations
+- IoT-Based Energy Monitoring
+- Autonomous Vehicle Charging
+- Smart Transportation Systems
 
 ---
 
@@ -72,7 +83,8 @@ The transmitter circuit generates a high-frequency alternating magnetic field us
 - Increase wireless charging distance
 - Improve power transfer efficiency
 - Automatic coil alignment
-- IoT-based remote monitoring
-- Integration with Battery Management Systems (BMS)
+- Battery Management System (BMS) integration
+- Mobile application for remote monitoring and notifications
+- Cloud-based data analytics for charging performance
 
 ---
